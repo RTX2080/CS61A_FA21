@@ -144,5 +144,6 @@ def count_coins(change):
 
 
 if __name__=='__main__':
-    for i in range(1,101):
-        print(count_coins(i))
+    print(max(20,50))
+    # for i in range(1,101):
+    #     print(count_coins(i))
