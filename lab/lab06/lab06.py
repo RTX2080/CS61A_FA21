@@ -28,6 +28,19 @@ def insert_items(lst, entry, elem):
     True
     """
     "*** YOUR CODE HERE ***"
+    # assert entry!=elem 妈的，果然有一样的。
+    sz = len(lst)
+    i=0
+    while i<sz:
+        if lst[i]==entry:
+            if i+1<sz:
+                lst.insert(i+1, elem)
+                i+=1
+            else:
+                lst.append(elem)
+            sz+=1
+        i+=1
+    return lst
 
 
 def count_occurrences(t, n, x):
@@ -51,6 +64,12 @@ def count_occurrences(t, n, x):
     2
     """
     "*** YOUR CODE HERE ***"
+    cnt=0
+    while n:
+        if next(t)==x:
+            cnt+=1
+        n-=1
+    return cnt
 
 
 def repeated(t, k):
@@ -76,3 +95,11 @@ def repeated(t, k):
     """
     assert k > 1
     "*** YOUR CODE HERE ***"
+    cnt = 0
+    pre = -1
+    while t:
+        x = next(t)
+        cnt=cnt+1 if x==pre else 1
+        pre = x
+        if cnt==k:
+            return x
