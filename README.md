@@ -1,3 +1,4 @@
-# CS61A_FA22
-实时更新cs61A2022fall的lab/pro/hw
-因为进度问题，部分lab/pro/hw可能来自fa21
+# CS61A_FA21
+其实本来是想做22的，但是做到lab4进度就超了
+lab4及以后的时间线全是fa21
+
