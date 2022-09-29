@@ -141,9 +141,16 @@ def count_coins(change):
         return ans
 
     return get(change,1)
-
+def uuu():
+    yield 5
+    yield 6
+    yield 7
 
 if __name__=='__main__':
-    print(max(20,50))
-    # for i in range(1,101):
+    for e in zip([10, 9, 8], range(3)):
+        print(tuple(map(lambda x: x + 2, e)))
+
+
+
+# for i in range(1,101):
     #     print(count_coins(i))
