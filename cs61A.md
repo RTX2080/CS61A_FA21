@@ -17,6 +17,20 @@ lab03的repeat很好玩儿
 
 
 
+#### RE：
+
+第一次学正则表达式（
+
+![image-20220930165753045](/Users/gtx1080/Library/Application Support/typora-user-images/image-20220930165753045.png)
+
+
+
+
+
+
+
+
+
 
 
 

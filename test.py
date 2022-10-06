@@ -146,11 +146,25 @@ def uuu():
     yield 6
     yield 7
 
+def cal(baoji,baoshang,dagongji,xiaogongji,dashengming,xiaoshengming,jingtong):
+    return baoji*2+baoshang+dagongji*1.33*0.5+xiaogongji*0.398*0.5*0.5+dashengming*1.33*0.8+xiaoshengming*0.026*0.66*0.8+jingtong*0.33*0.75
 if __name__=='__main__':
-    for e in zip([10, 9, 8], range(3)):
-        print(tuple(map(lambda x: x + 2, e)))
-
-
+    bei = cal(0,12.4,0,33,15.2,0,0)
+    sha = cal(6.2,14,0,0,0,747,0)
+    tou = cal(0,6.2,0,0,14,0,0)
+    mao = cal(11.7,13.2,9,9,0,0,0)
+    hua = cal(13.2,5.4,0,0,8.7,0,0)
+    touplus = cal(0,15.5,0,0,20.4,0,0)
+    huaplus = cal(7,10.9,0,0,5.8,0,63)
+    shaplus = cal(11.7,6.2,0,0,16.3,0,0)
+    # print(touplus)
+    # print(tou)
+    #散件头比追忆头高16  57-41
+    #追忆花41,散件花46
+    #追忆火伤杯32分,最好的火伤杯
+    #追忆毛43分，散件55分
+    #追忆精通沙36分，散件精通沙（36双爆），散件攻击沙 47分+一个词条
+    print(57+41+32+43+36)
 
 # for i in range(1,101):
     #     print(count_coins(i))
